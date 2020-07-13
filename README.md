@@ -17,7 +17,7 @@ Back End: Python | Flask | Tekore
 
 The majority of Liveify is built in Python with Flask, and we used HTML/CSS to build the UI. The mood/positivity, danceability, and energy metrics were accessed through the Spotify API using a Python library called Tekore. 
 
-# 😅 Challenges we ran into
+# 😓 Challenges we ran into
 Before implementing Tekore, we tried using Spotipy at first. For 3 hours, we were trying to pass Strings as Floats since we forgot to cast, simply because we are noobs. Spotipy also caused later issues with user authentification, so we pivoted and used Tekore instead. 
 
 # 🌟 Accomplishments that we're proud of
