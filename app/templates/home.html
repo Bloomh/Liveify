@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content">
+<a href="/"><img src="{{url_for('static', filename='liveify.jpg')}}" width="400px"></a>
+{% if user %}
+<!-- <h2>User ID: {{user}}</h2> -->
+<div id="images">
+<a href="/login"><img src="{{ url_for('static', filename='log in.png') }}" width="150px"></a><br/>
+<!-- <p></p> -->
+<a href="/logout"><img src="{{ url_for('static', filename='sign out.png') }}" width="150px"></a>
+</div>
+<div id="redirect">
+<h4>Click the record player below to make your concert!</h4> <!-- <a href="/input">here</a> to make your concert!-->
+<a href="/input"><img src="{{ url_for('static', filename='Liveify home.png') }}" width="200px"></a>
+</div>
+{% else %}
+<h2><a href="/login"><img src="{{ url_for('static', filename='log in.png') }}" width="150px"></a></h2>
+{% endif %}
+
+{% if song %}
+</div>
+<h5 class="hidden">It seems you like listening to "{{song.item.name}}" &#128064</h5>
+{% endif %}
+
+{% endblock %}

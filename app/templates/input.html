@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<a class="left" href="/"><img src="{{url_for('static', filename='live.png')}}" width="150px"></a>
+
+<div class="content"><!--<br><br><br><br><br>-->
+    <img src="{{url_for('static', filename='lime-downloading.png')}}" width="300px"><!--class="cont"-->
+<h1>Create Your Concert!</h1>
+<form action="" method="post" novalidate id="form">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.username.label }}<br>
+        {{ form.username(size=32) }} <!-- maybe can alter flask-wtf attributes within here? -->
+    </p>
+    <p>
+        {{ form.mood.label }}<br>
+        <p style="font-size:4">[1 is positive, 0 is negative]</p>
+        {{ form.mood(size=32) }}
+    </p>
+    <p>
+        {{ form.danceability.label }}<br>
+        <p style="font-size:4">[1 is super danceable, 0 isn't]</p>
+        {{ form.danceability(size=32) }}
+    </p>
+    <p>
+        {{ form.energy.label }}<br>
+        <p style="font-size:4">[1 is super enegetic, 0 is mellow]</p>
+        {{ form.energy(size=32) }}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
+<h6>&#127775 This may take some time: we aren’t just pulling random songs from Spotify. We’re analyzing songs based on your preferences for mood/positivity, danceability, and energy, making sure they are from live performances, and auto generating a concert playlist for you.</h6>
+</div>
+{% endblock %}

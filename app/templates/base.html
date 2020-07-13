@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% if title %}
+  <title>{{ title }}</title>
+  {% else %}
+  <title>Website</title>
+  {% endif %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='bruh.css') }}"> <!--{{ url_for('static', filename='css/bruh.css') }}-->
+</head>
+
+<body> <!--style="background-color:#00ffff; color:#ffffff"-->
+  <div id="all" background-color: #121640>
+    <!-- <a href="/"><img src="{{url_for('static', filename='liveify.jpg')}}" width="400px"></a> -->
+    <!-- <hr> -->
+    <!-- <hr>style="color:#ffffff" -->
+    <!-- {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    
+      {% for message in messages %}
+      <p>{{ message }}</p>
+      
+      {% endfor %}
+    
+    {% endif %}
+    {% endwith %} -->
+    {% block content %}{% endblock %}
+  </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+p{
+    color: #ffffff;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; 
+    background-color: #232771;
+}
+hr{
+    color:#ffffff;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+}
+a{
+    color:#0000ff;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+}
+#all { 
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; 
+    text-align: middle;
+    color: white;
+    background-color: #232771;
+}
+* {
+    background-color: #232771
+}
+
+#redirect{
+    /* float: right; */
+    /* text-align: right; */
+    padding-left: "200px";
+    padding-right: "100px";
+}
+#images{
+    padding-top: "400px";
+    align-self: center;
+}
+.content{
+    margin: auto;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    color: #ffffff;
+}
+form{
+    color: white;
+}
+.left{
+    float:left;
+}
+.cont{
+    float: right;
+    margin:auto;
+    width: 50%;
+    align-self: right;
+    text-align: right;
+    color: #ffffff;
+    margin-top: "100px";
+}
+.hidden{
+    /* margin: auto; */
+    width: 50%;
+    align-self: left;
+    text-align: left;
+    color: #ffffff;
+}
