@@ -10,7 +10,7 @@ Over the past six months, the number of confirmed cases of coronavirus has risen
 # 🎵 What it does
 User interaction has three main parts.  First, the user must authenticate and sync up their Spotify account with Liveify. Second, the user inputs the desired mood/positivity, danceability, and energy of their concert. Liveify will take the user inputs and auto-generate a personalized concert playlist on the user’s Spotify account. Third, the user can relax or dance to their live concert!
 
-# 🏗 How we built it
+# 🔨 How we built it
 Front End: HTML | CSS
 APIs: Spotify API
 Back End: Python | Flask | Tekore 
