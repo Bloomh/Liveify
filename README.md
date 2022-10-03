@@ -32,3 +32,6 @@ Next, it would be nice to expand the library from which Liveify pulls songs from
 
  Built with
 	Python, Flask, APIs, CSS, HTML, Tekore.
+
+### Project Link
+https://devpost.com/software/liveify
